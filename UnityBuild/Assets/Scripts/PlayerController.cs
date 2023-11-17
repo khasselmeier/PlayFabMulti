@@ -41,13 +41,13 @@ public class PlayerController : MonoBehaviour
     {
         startTime = Time.time;
         isPlaying = true;
-        Leaderboard.instance.SetLeaderboardEntry(-Mathf.RoundToInt(timeTaken * 1000.0f));
         playButton.SetActive(false);
     }
 
     void End()
     {
         timeTaken = Time.time - startTime;
+        Leaderboard.instance.SetLeaderboardEntry(-Mathf.RoundToInt(timeTaken * 1000.0f));
         isPlaying = false;
         playButton.SetActive(true);
     }

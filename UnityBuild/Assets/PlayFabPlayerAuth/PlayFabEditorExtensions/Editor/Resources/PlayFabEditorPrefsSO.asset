@@ -15,10 +15,10 @@ MonoBehaviour:
   DevAccountEmail: hasselmk@my.erau.edu
   DevAccountToken: ogh1aihzrbmfzjhfeic4pbqy5zebrj7jtir8sx7sdoihgtd5me6meg73bk49a4hiu7mmkfuzjyupcmrdidqweozak14onb6ud35ziqyeghhyfsao5in9rhybg5yahpz4sbfwqy1k5oiu1mft6ww5pttbqchoxe8mxhbfkitbcsxzfmc9uf5hhkindementq5qw5f897z
   AadAuthorization: 
-  SelectedStudio: PlayFabLeaderBoard
+  SelectedStudio: PlayFab
   SdkPath: Assets/PlayFabPlayerAuth/PlayFabSDK
   EdExPath: 
-  LocalCloudScriptPath: C:/Users/kbug0/OneDrive/Documents/Dev/PlayFabMulti/Assets/PlayFabEditorExtensions/Editor/Resources/.CloudScript.js
+  LocalCloudScriptPath: C:/Users/kbug0/OneDrive/Documents/Dev/PlayFabMulti/UnityBuild/Assets/PlayFabEditorExtensions/Editor/Resources/.CloudScript.js
   PanelIsShown: 0
   curMainMenuIdx: 4
   curSubMenuIdx: 0

@@ -29,6 +29,32 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+handlers.UpdateHighscore = function (args, context)
+{
+    var score = args.score;
+    
+    if(!ScoreIsPossible(score))
+        return null;
+    
+    var request =
+    {
+        PlayFabId: currentPlayerId,
+        Statistics: [{ StatisticName: "FastestTime", Value: score }]
+    };
+    
+    var result = server.UpdatePlayerStatistics(request);
+}
+
+function ScoreIsPossible (score)
+{
+    var trueScore = -score;
+    
+    if(trueScore < 1000)
+        return false;
+    else
+        return true;
+}
+
 
 // This is a Cloud Script function. "args" is set to the value of the "FunctionParameter" 
 // parameter of the ExecuteCloudScript API.
